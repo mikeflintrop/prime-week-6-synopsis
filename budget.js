@@ -4,14 +4,16 @@ const budget = 25000;
 let purchases = [];
 
 function addPurchase(){
-    let newPurchase = {
+    console.log( 'in addPurchase' )
+    let purchase = {
         name: $( '#purchaseNameIn' ).val(),
         price: $( '#purchasePriceIn' ).val()
     }
+    purchases.push( purchase );
     $( '#purchaseNameIn' ).val( '' );
     $( '#purchasePriceIn' ).val( '' );
 
-    calculateRemainingBudget( );
+    calculateRemainingBudget();
     displayPurchases();
 }
 
