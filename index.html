@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Tier 1 Synopsis</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheet.css" />
+    <script src="jquery-3.6.0.min.js" charset="utf-8"></script>
+    <script src="budget.js" charset="utf-8"></script>
+  </head>
+
+  <body>
+
+    <header>
+      <h1>Tier 1 Synopsis</h1>
+      <h2>Budget: $<span id="budgetOut"></span></h2>
+        <input type="text" placeholder="purchase name" id="purchaseNameIn">
+        <input type="number" placeholder="purchase price" id="purchasePriceIn">
+        <button id="addPurchaseButton">ADD</button>
+    </header>
+
+    <main>
+      <h3>Purchases:</h3>
+          <ul>
+            <li>PurchaseName: $PurchasePrice</li>
+          </ul>
+        <h3>Remaining Budget: $<span id="remainingBudgetOut">RemainingBudget</span></h3>  
+    </main> 
+    
+  </body>
+
+</html>
